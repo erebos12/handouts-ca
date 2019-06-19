@@ -15,7 +15,7 @@
      * 15:30 - 16:00 - Präsentation der Lösungen (2 Leute)
 
 ## Tag 1
-###Intro
+### Intro
 
 - Begrüßung von Fred / Alex
 - Ziel von der heutigen der heutigen Session:
