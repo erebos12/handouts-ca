@@ -1,15 +1,20 @@
 # Coding Academy
 
 
-## Agenda - Coding-Session JAVA
+## Agenda - Coding-Session JAVA/TDD
 
-* 9:30 - 13:00 - Coding Session Part 1
-* 13:00 - 14:00 - Mittagspause
-* 14:00 - 16:00 - Coding Session Part 2
-* 16:15 - 17:00 - Präsentation der Lösungen (JAVA, JavaScript, Python)
+* Tag 1:
+     * 14:30 - 15:00 - Intro
+     * 15:00 - 18:00 - Coding Session Part 1
+* Tag 2:
+     * 9:00 - 12:00 - Coding Session Part 2
+     * Mittagspause
+     * 13:00 - 15:00 - Coding Session Part 2
+     * 15:00 - 15:30 - Vorbereitung der Präsentation
+     * 15:30 - 16:00 - Präsentation der Lösungen (2 Leute)
 
 
-### Intro (9:30 Uhr - max. 10:15)
+### Intro
 
 - Begrüßung von Fred / Alex
 - Ziel von der heutigen der heutigen Session:
@@ -26,12 +31,10 @@
    - Docker https://docs.docker.com/get-started/
    - Test-Driven-Development (TDD) http://agiledata.org/essays/tdd.html
    - Pair-Programming https://en.wikipedia.org/wiki/Pair_programming
-   
-   
-- Gruppen von 2 Personen zum programmieren ('Pair Programming')
 
 
-### PART 1 (10:15 - 13 Uhr)
+
+### PART 1
 - Programmieren des ChatBot mit TDD
    * Diskussion während des Programmierens gewünscht!
    * 'git commit' nicht vergessen
@@ -58,10 +61,9 @@
    * optional: Fred/Alex anderes Bsp. mit "swear-word case" in Rivescript
    * Ziel: In der IDE-Konsole kann man mit dem ChatBot chatten! 
 
- 
-- Mittag 13-14:00 Uhr
 
-### PART 2 (14:00 - 15:45 Uhr)
+
+### PART 2
 - Programmieren eines RESTful-Web-Service für den ChatBot via SpringBoot
   * Um den Bot via HTTP anzusprechen, implementieren wir nun einen REST/HTTP-Server mit dem SpringBoot-Framework
   * Maven-Deps für SpringBoot (siehe coding-handout)
