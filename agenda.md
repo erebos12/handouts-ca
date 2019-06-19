@@ -9,12 +9,13 @@
 * Tag 2:
      * 9:00 - 12:00 - Coding Session Part 2
      * Mittagspause
-     * 13:00 - 15:00 - Coding Session Part 2
+     * 13:00 - 14:30 - Coding Session Part 2
+     * 14:30 - 15:00 - Wrap-Up
      * 15:00 - 15:30 - Vorbereitung der Präsentation
      * 15:30 - 16:00 - Präsentation der Lösungen (2 Leute)
 
-
-### Intro
+## Tag 1
+###Intro
 
 - Begrüßung von Fred / Alex
 - Ziel von der heutigen der heutigen Session:
@@ -41,7 +42,7 @@
    * Neues Maven Project anlegen
       * GrouppId = de.example.codingacademy / artifactId = chatbot
    * Create de.example.codingacademy.ChatBot Class (nur der Skeleton)
-   * git init/commit f. pom.xml and + ChtaBot class
+   * git init/commit für pom.xml and + ChatBot class
    * Den ersten Test schreiben wir zusammen
       * harmcrest zu pom.xml hinzufügen - https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3 to pom.xml (siehe coding-handout)
       * neue Test-Klasse de.example.codingacademy.ChatBotTest anlegen
@@ -59,19 +60,18 @@
          * Lesen der Eingabe von der Konsole in while-loop
          * Test mit start der MainClass aus der IDE und chatten
    * optional: Fred/Alex anderes Bsp. mit "swear-word case" in Rivescript
-   * Ziel: In der IDE-Konsole kann man mit dem ChatBot chatten! 
+   * Ziel: In der IDE-Konsole kann man mit dem ChatBot chatten!
 
-
-
+## Tag 2
 ### PART 2
 - Programmieren eines RESTful-Web-Service für den ChatBot via SpringBoot
   * Um den Bot via HTTP anzusprechen, implementieren wir nun einen REST/HTTP-Server mit dem SpringBoot-Framework
   * Maven-Deps für SpringBoot (siehe coding-handout)
   * neues Package 'rest' anlegen
-     * eigentlich auch hier zuerst den Test schreiben mit MockMVC! 
+     * eigentlich auch hier zuerst den Test schreiben mit MockMVC!
         * aus Zeitgründen überspringen wir das
      * neue Klasse ChatBotApp als @SpringBootApplication anlegen
-  * Fred/Alex zeigen wie zu implementieren sind 
+  * Fred/Alex zeigen wie zu implementieren sind
      * neue Klasse GetHelloController mit @GetMapping("/") für einfache Hallo-Response des Webservice
      * git add / git commit
      * neue Klasse PostMsgController mit @PostMapping("/") für Kommunikation mit ChatbOt
@@ -79,12 +79,20 @@
 - Verpacken des RESTful Webservice in Docker-Image:
   * Dockerfile anlegen, Build image and run image
   * Test des REST-Service via Postman (sollte installiert sein)
- 
-### Wrap-Up (15:45 - 16:00 Uhr)
+
+### Wrap-Up
 - Was haben wir heute gelernt?
-  - Automatisierung - "Automate everything!"  
+  - Automatisierung - "Automate everything!"
   - Wiederverwendung - "Don't reinvent the wheel!"
   - Qualität und Code-Struktur durch TDD
   - Docker für DevOps
   - GIT für Versionierung und Sharing Code
-  
+
+### Vorbereitung Präsentation
+Pro Team sind 10 Minuten Ergebnispräsentation vorgesehen.
+
+Eigentverantwortliches ausarbeiten der Präsentation:
+- Wer präsentiert?
+- Was wird präsentiert?
+- Wie wird präsentiert?
+
