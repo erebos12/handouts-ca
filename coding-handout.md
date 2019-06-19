@@ -35,13 +35,13 @@
 ### SpringBoot
 
     <properties>
-        <spring.boot.version>2.0.5.RELEASE</spring.boot.version>
+        <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.5.RELEASE</version>
+        <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -105,16 +105,13 @@ target
 ### Dockerfile 
 
 ```
-FROM java:8
-# Install maven
-RUN apt-get update
-RUN apt-get install -y maven
+FROM maven:3.6.1-jdk-11-slim
 
 WORKDIR /code
 
 # Prepare by downloading dependencies
 COPY pom.xml /code/pom.xml
-#RUN ["mvn", "dependency:resolve"]
+RUN ["mvn", "dependency:resolve"]
 
 # Adding source, compile and package into a fat jar
 COPY src /code/src
@@ -125,7 +122,7 @@ RUN ["mvn", "package"]
 
 
 EXPOSE 8080
-CMD ["/usr/lib/jvm/java-8-openjdk-amd64/bin/java", "-jar", "/code/target/ChatBot-1.0-SNAPSHOT.jar"
+CMD ["/bin/bash", "-c", "java -jar /code/target/ChatBot-1.0-SNAPSHOT.jar"]
 ```
 
 ### Build / Run docker image
