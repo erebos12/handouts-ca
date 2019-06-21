@@ -1,4 +1,4 @@
-#  Links & Resources 
+#  Links & Resources
 
 # Table of Contents
 1. [Maven-Dependencies](#maven)
@@ -12,7 +12,6 @@
 ### Hamcrest
 
      <dependencies>
-       ...
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
@@ -20,8 +19,8 @@
             <scope>test</scope>
         </dependency>
      </dependencies>
-        
-### Rivescript 
+
+### Rivescript
 
      <dependencies>
        ...
@@ -66,7 +65,7 @@
 
 
 <a name="snippet"></a>
-## Code-Snippets 
+## Code-Snippets
 
 ### rivescript
 
@@ -102,7 +101,7 @@
 target
 ```
 
-### Dockerfile 
+### Dockerfile
 
 ```
 FROM maven:3.6.1-jdk-11-slim
