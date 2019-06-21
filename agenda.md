@@ -4,8 +4,9 @@
 ## Agenda - Coding-Session JAVA/TDD
 
 * Tag 1:
-     * 14:30 - 15:00 - Intro
-     * 15:00 - 18:00 - Coding Session Part 1
+     * 14:30 - 15:00 - Intro / Vorstellunsgrunde
+     * 15:00 - 15:30 - Ein kleines Bisschen Theorie
+     * 15:30 - 18:00 - Coding Session Part 1
 * Tag 2:
      * 9:00 - 12:00 - Coding Session Part 2
      * Mittagspause
@@ -18,36 +19,41 @@
 ### Intro
 
 - Begrüßung von Fred / Alex
+- Stellt euch vor!
 - Ziel von der heutigen der heutigen Session:
    - nicht nur JAVA, sondern Best-Practices in der SW-Entwicklung
    - *Programmieren können viele, aber Software entwickeln nur wenige!*
 - Technologien / Prinzipien:
-   - JAVA - https://www.tiobe.com/tiobe-index/
+   - Ist JAVA überhaupt noch aktuell ? https://www.tiobe.com/tiobe-index/
    - OO-Programming https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260
    - Rivescript (general) https://www.rivescript.com/
+   - Ribescript Playground https://play.rivescript.com/
    - SpringBoot - http://spring.io/projects/spring-boot
    - Hamcrest - http://hamcrest.org/JavaHamcrest/
    - Maven - https://maven.apache.org/
    - GIT https://git-scm.com/
    - Docker https://docs.docker.com/get-started/
-   - Test-Driven-Development (TDD) http://agiledata.org/essays/tdd.html
+   - Test-Driven-Development (TDD) https://dzone.com/articles/get-started-with-test-driven-development-a-beginne
    - Pair-Programming https://en.wikipedia.org/wiki/Pair_programming
 
 
 
 ### PART 1
-- Programmieren des ChatBot mit TDD
-   * Diskussion während des Programmierens gewünscht!
+- Grundregeln:
+   * Diskussion während des Programmierens erwünscht!
+   * Bei Problemen - 'FRAGEN' !!!
    * 'git commit' nicht vergessen
+- Programmieren des ChatBot mit TDD
    * Neues Maven Project anlegen
       * GrouppId = de.coding.academy / artifactId = chatbot
       * Wähle ein beliebigesVerzeichnis für 'Project location'
-   * Lege einer neue Klasse 'ChatBot' an (nur der Skeleton)
+      * Es wird die Verzeichnis-Struktur mit src/main und src/test angelegt
+   * Lege einer neue Klasse 'ChatBot' in src/main/java an (nur der Skeleton)
    * Anlegen eines GIT Repository:
-      * Erzeuge GIT repo mit Kommando 'git init' inkl. Datei .gitignore
+      * Erzeuge GIT repo mit Kommando 'git init' inkl. Datei .gitignore (siehe https://github.com/erebos12/handouts-ca/blob/master/coding-handout.md)
       * Dann commit mit Kommando 'git add . && git commit'
-   * TDD - Zuerst den Test! Den ersten Test schreiben wir zusammen
-      * harmcrest zu pom.xml hinzufügen - https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3 to pom.xml (siehe coding-handout)
+   * TDD - Zuerst den Test! Den ersten Test schreiben wir zusammen!
+      * harmcrest zu pom.xml hinzufügen - siehe https://github.com/erebos12/handouts-ca/blob/master/coding-handout.md
       * neue Test-Klasse 'ChatBotTest'
          * Hierfür in der Klasse Chatbot Ctrl+N drücken und Test auswählen. Bitte JUnit 4 wählen und Test-Klasse anlegen.
          * Eine neue Method testSayHelloBot() anlegen:
@@ -57,7 +63,7 @@
              * Anschließend nutzen wir Hamcrest, um auf das erwartete Ergebnis von 'getReply()' zu asserten
              * Achtung: Für den Fall, dass der Test mit dem Fehler "Error:java: error: release version 5 not supported" abbricht, dann bitte in den Project Settings auf JAVA Version 8 umstellen
          * Der Test sollte fehlschlagen! Somit haben wir den ersten Schritt im TDD Zyklus erfolgreich absolviert.
-   * Eigenständiges Schreiben von weiteren 2-3 Tests
+   * Eigenständiges Schreiben von 2-3 weiteren Tests
       * danach kurze Diskussion über die Tests
       * nach finalisieren der Tests - git commit
    * Logik der ChatBot-Klasse programmiren (geführt von Fred/Alex)
@@ -81,7 +87,7 @@
      * eigentlich auch hier zuerst den Test schreiben mit MockMVC!
         * aus Zeitgründen überspringen wir das
      * neue Klasse ChatBotApp als @SpringBootApplication anlegen
-  * Fred/Alex zeigen wie zu implementieren sind
+  * Fred/Alex zeigen wie die RestController zu implementieren sind
      * neue Klasse GetHelloController mit @GetMapping("/") für einfache Hallo-Response des Webservice
      * git add / git commit
      * neue Klasse PostMsgController mit @PostMapping("/") für Kommunikation mit ChatbOt
@@ -96,7 +102,7 @@
   - Wiederverwendung - "Don't reinvent the wheel!"
   - Qualität und Code-Struktur durch TDD
   - Docker für DevOps
-  - GIT für Versionierung und Sharing Code
+  - GIT für Versionierung und Sharing von Code
 
 ### Vorbereitung Präsentation
 Pro Team sind 10 Minuten Ergebnispräsentation vorgesehen.
