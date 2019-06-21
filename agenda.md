@@ -40,9 +40,12 @@
    * Diskussion während des Programmierens gewünscht!
    * 'git commit' nicht vergessen
    * Neues Maven Project anlegen
-      * GrouppId = de.example.codingacademy / artifactId = chatbot
-   * Create de.example.codingacademy.ChatBot Class (nur der Skeleton)
-   * git init/commit für pom.xml and + ChatBot class
+      * GrouppId = de.coding.academy / artifactId = chatbot
+      * Choose folder for 'Project location' as you like 
+   * Lege einer neue Klasse 'ChatBot' an (nur der Skeleton)
+   * Anlegen eines GIT Repository:
+      * Erzeuge GIT repo mit Kommando 'git init' inkl. Datei .gitignore
+      * Dann commit mit Kommando 'git add . && git commit'
    * Den ersten Test schreiben wir zusammen
       * harmcrest zu pom.xml hinzufügen - https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3 to pom.xml (siehe coding-handout)
       * neue Test-Klasse de.example.codingacademy.ChatBotTest anlegen
