@@ -41,16 +41,23 @@
    * 'git commit' nicht vergessen
    * Neues Maven Project anlegen
       * GrouppId = de.coding.academy / artifactId = chatbot
-      * Choose folder for 'Project location' as you like 
+      * Wähle ein beliebigesVerzeichnis für 'Project location'
    * Lege einer neue Klasse 'ChatBot' an (nur der Skeleton)
    * Anlegen eines GIT Repository:
       * Erzeuge GIT repo mit Kommando 'git init' inkl. Datei .gitignore
       * Dann commit mit Kommando 'git add . && git commit'
-   * Den ersten Test schreiben wir zusammen
+   * TDD - Zuerst den Test! Den ersten Test schreiben wir zusammen
       * harmcrest zu pom.xml hinzufügen - https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3 to pom.xml (siehe coding-handout)
-      * neue Test-Klasse de.example.codingacademy.ChatBotTest anlegen
-         * method sayHelloBot() anlegen, welche die Methode getReply() testet
-   * Nun schreiben die Gruppen mind. 2 Tests eigenständig
+      * neue Test-Klasse 'ChatBotTest'
+         * Hierfür in der Klasse Chatbot Ctrl+N drücken und Test auswählen. Bitte JUnit 4 wählen und Test-Klasse anlegen.
+         * Eine neue Method testSayHelloBot() anlegen:
+             * Zuerst erzeugen wir ein Instanz der Klasse Chatbot in der Test-Klasse ChatBotTest
+             * Dann nutzen wir die Instanz der Klasse Chatbot, um auf die (künftige) Methode 'getReply()' aufzurufen
+             * Da diese Methode in 'Chatbot' noch nicht exisitert, müssen wir sie anlegen
+             * Anschließend nutzen wir Hamcrest, um auf das erwartete Ergebnis von 'getReply()' zu asserten
+             * Achtung: Für den Fall, dass der Test mit dem Fehler "Error:java: error: release version 5 not supported" abbricht, dann bitte in den Project Settings auf JAVA Version 8 umstellen
+         * Der Test sollte fehlschlagen! Somit haben wir den ersten Schritt im TDD Zyklus erfolgreich absolviert.
+   * Eigenständiges Schreiben von weiteren 2-3 Tests
       * danach kurze Diskussion über die Tests
       * nach finalisieren der Tests - git commit
    * Logik der ChatBot-Klasse programmiren (geführt von Fred/Alex)
