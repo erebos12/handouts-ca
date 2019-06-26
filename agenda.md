@@ -48,7 +48,7 @@
       * GrouppId = de.coding.academy / artifactId = chatbot
       * Wähle ein beliebigesVerzeichnis für 'Project location'
       * Es wird die Verzeichnis-Struktur mit src/main und src/test angelegt
-   * Lege einer neue Klasse 'ChatBot' in src/main/java an (nur der Skeleton)
+   * Lege eine neue Klasse 'de.bot.ChatBot' in src/main/java an (nur der Skeleton)
    * Anlegen eines GIT Repository:
       * Erzeuge GIT repo mit Kommando 'git init' inkl. Datei .gitignore (siehe https://github.com/erebos12/handouts-ca/blob/master/coding-handout.md)
       * Dann commit mit Kommando 'git add . && git commit'
@@ -82,11 +82,10 @@
 ### PART 2
 - Programmieren eines RESTful-Web-Service für den ChatBot via SpringBoot
   * Um den Bot via HTTP anzusprechen, implementieren wir nun einen REST/HTTP-Server mit dem SpringBoot-Framework
-  * Maven-Deps für SpringBoot (siehe coding-handout)
+  * Maven-Deps für SpringBoot und MockMVC (siehe coding-handout)
   * neues Package 'rest' anlegen
-     * eigentlich auch hier zuerst den Test schreiben mit MockMVC!
-        * aus Zeitgründen überspringen wir das
      * neue Klasse ChatBotApp als @SpringBootApplication anlegen
+  * TDD - Auch hier schreiben wir zunächst einen Test
   * Fred/Alex zeigen wie die RestController zu implementieren sind
      * neue Klasse GetHelloController mit @GetMapping("/") für einfache Hallo-Response des Webservice
      * git add / git commit
