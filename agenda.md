@@ -89,7 +89,7 @@
   * Fred/Alex zeigen wie die RestController zu implementieren sind
      * neue Klasse GetHelloController mit @GetMapping("/") für einfache Hallo-Response des Webservice
      * git add / git commit
-     * neue Klasse PostMsgController mit @PostMapping("/") für Kommunikation mit ChatbOt
+     * neue Klasse PostMsgController mit @PostMapping("/") für Kommunikation mit ChatBot
      * git add / git commit
 - Verpacken des RESTful Webservice in Docker-Image:
   * Dockerfile anlegen, Build image and run image
