@@ -9,6 +9,14 @@
 <a name="maven"></a>
 ## Maven-Dependencies
 
+
+### Maven Compiler Settings
+
+   <properties>
+        ....
+        <maven.compiler.release>13</maven.compiler.release>
+    </properties>
+
 ### Hamcrest
 
      <dependencies>
