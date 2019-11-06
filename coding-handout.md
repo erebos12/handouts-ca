@@ -12,7 +12,7 @@
 
 ### Maven Compiler Settings
 
-   <properties>
+    <properties>
         ....
         <maven.compiler.release>13</maven.compiler.release>
     </properties>
