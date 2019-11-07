@@ -20,7 +20,7 @@
 
 - Begrüßung von Fred / Alex
 - Stellt euch vor!
-- Ziel von der heutigen der heutigen Session:
+- Ziel unserer Session:
    - nicht nur JAVA, sondern Best-Practices in der SW-Entwicklung
    - *Programmieren können viele, aber Software entwickeln nur wenige!*
 - Technologien / Prinzipien:
